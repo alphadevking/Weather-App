@@ -76,7 +76,7 @@ export default function UIPage() {
     return (
         <div className="min-h-screen flex flex-col flex-wrap justify-center items-center bg-blue-100">
             <h1 className="text-3xl font-bold mb-8">Check Weather</h1>
-            <form onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit} className='flex flex-col gap-5'>
                 <input
                     type="text"
                     value={city}
@@ -86,7 +86,7 @@ export default function UIPage() {
                 />
                 <button
                     type="submit"
-                    className="py-2 px-4 rounded-lg shadow-md bg-blue-500 hover:bg-blue-600 text-white ml-2"
+                    className="py-2 px-4 rounded-lg shadow-md bg-blue-500 hover:bg-blue-600 text-white w-fit"
                 >
                     Get Weather
                 </button>
@@ -109,7 +109,7 @@ export default function UIPage() {
                     </p>
                 </div>
             )}
-            <Link className='opacity-70 py-3 text-sm hover:underline' href={'/forecast'}>Want to know the weather for the next 3 days? Come!</Link>
+            <Link className='opacity-70 py-3 text-sm hover:underline text-center' href={'/forecast'}>Want to know the weather for the next 3 days? Come!</Link>
         </div>
     );
 }

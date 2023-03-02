@@ -107,7 +107,7 @@ export default function Forecast() {
                     </div>
                 </div>
             )}
-            <Link className='opacity-70 py-3 text-sm hover:underline' href={'/'}>Check out the current weather condition at any location!</Link>
+            <Link className='opacity-70 py-3 text-sm hover:underline text-center' href={'/'}>Check out the current weather condition at any location!</Link>
         </div>
     );
 }
