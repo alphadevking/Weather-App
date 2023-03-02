@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { Loading } from "@nextui-org/react";
 import axios, { AxiosError, AxiosResponse } from 'axios';
+import Link from 'next/link';
 
 interface WeatherData {
     location: {
@@ -73,8 +74,8 @@ export default function UIPage() {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center bg-blue-100">
-            <h1 className="text-3xl font-bold mb-8">Weather Forecast</h1>
+        <div className="min-h-screen flex flex-col flex-wrap justify-center items-center bg-blue-100">
+            <h1 className="text-3xl font-bold mb-8">Check Weather</h1>
             <form onSubmit={handleFormSubmit}>
                 <input
                     type="text"
@@ -108,6 +109,7 @@ export default function UIPage() {
                     </p>
                 </div>
             )}
+            <Link className='opacity-70 py-3 text-sm hover:underline' href={'/forecast'}>Want to know the weather for the next 3 days? Come!</Link>
         </div>
     );
 }
