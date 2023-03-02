@@ -35,7 +35,7 @@ export default function UIPage() {
                 url: 'https://weatherapi-com.p.rapidapi.com/current.json',
                 params: { q: cityName },
                 headers: {
-                    'X-RapidAPI-Key': 'b1e4687e68mshe616c775f7fdde8p15e17djsn7b10598f3751',
+                    'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPIDAPI_KEY,
                     'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
                 }
             };
