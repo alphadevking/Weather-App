@@ -74,7 +74,7 @@ export default function UIPage() {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col flex-wrap justify-center items-center bg-blue-100">
+        <div className="min-h-screen flex flex-col flex-wrap justify-center items-center bg-blue-100 mx-auto">
             <h1 className="text-3xl font-bold mb-8">Check Weather</h1>
             <form onSubmit={handleFormSubmit} className='flex flex-col gap-5'>
                 <input

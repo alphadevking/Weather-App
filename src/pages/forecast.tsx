@@ -57,7 +57,7 @@ export default function Forecast() {
 
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center bg-blue-100">
+        <div className="min-h-screen flex flex-col justify-center items-center bg-blue-100 mx-auto">
             <h1 className="text-3xl font-bold mb-8">Weather Forecast</h1>
             <form onSubmit={handleSubmit}>
                 <div className="flex flex-col mb-4">
