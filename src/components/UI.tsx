@@ -82,11 +82,11 @@ export default function UIPage() {
                     value={city}
                     onChange={handleCityChange}
                     placeholder="Enter a city name"
-                    className="py-2 px-4 rounded-lg shadow-md border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                    className="py-2 px-4 rounded-lg shadow-md border-gray-300 focus:border-[#A3D4F7] focus:ring-1 focus:ring-[#A3D4F7] focus:outline-none"
                 />
                 <button
                     type="submit"
-                    className="py-2 px-4 rounded-lg shadow-md bg-blue-500 hover:bg-blue-600 text-white w-fit"
+                    className="py-2 px-4 rounded-lg shadow-md bg-[#A3D4F7] hover:bg-[#89c1e8] text-slate-600 w-fit transition-colors"
                 >
                     Get Weather
                 </button>

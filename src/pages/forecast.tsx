@@ -75,7 +75,7 @@ export default function Forecast() {
                 </div>
                 <button
                     type="submit"
-                    className="py-2 px-4 rounded-lg shadow-md bg-blue-500 hover:bg-blue-600 text-white"
+                    className="py-2 px-4 rounded-lg shadow-md bg-[#A3D4F7] hover:bg-[#89c1e8] text-slate-600 w-fit transition-colors"
                 >
                     Get Forecast
                 </button>
